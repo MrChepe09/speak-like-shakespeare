@@ -1,25 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pirata+One&family=Sedgwick+Ave&display=swap');
+:root {
+  --primary-color: rgb(204, 201, 201);
+}
+
 body {
   margin: 0;
   padding: 0;
   /* background-image: url(/images/bg-image.jpg); */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url(/images/bg-image.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+    url(/images/bg-image.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .navigation {
-  font-size: 1.5rem;
+  font-family: 'Pirata One', cursive;
+  font-size: 1.7rem;
   font-weight: bolder;
-  /* background-color: rgba(209, 180, 127, 0.4); */
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 0.1rem;
   /* padding-bottom: 0rems; */
   /* text-align: center; */
-  color: rgb(20, 14, 5);
+  /* color: rgb(20, 14, 5); */
 }
 
 .navigation .nav-brand {
   text-align: center;
+  color: var(--primary-color);
   border: black solid 1px;
+}
+
+.about-section h2 {
+  text-align: center;
+}
+
+.about-section {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 2rem;
+  color: var(--primary-color);
+  padding: 1rem;
+  margin-bottom: 0rem;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.about-section h2 {
+  font-size: 1.6rem;
+  font-family: 'Pirata One', cursive;
+
+  /* color: var(--primary-color); */
+}
+
+.main-content {
+  display: inline-flex;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 12rem;
+  font-family: 'Sedgwick Ave', cursive;
+}
+
+.main-content h2 {
+  border: 2px var(--primary-color) solid;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem;
+  color: var(--primary-color);
+}
+
+.main-content .left {
+  margin-top: 2rem;
+  margin-left: 3.6rem;
+}
+
+.main-content .right {
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  font-family: 'Sedgwick Ave', cursive;
+  color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  margin-top: 13rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+  border: 2px var(--primary-color) solid;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background-color: rgba(116, 113, 113, 0.7);
+}
+
+textarea {
+  font-family: 'Kaushan Script', cursive;
+  border: 2px black solid;
+  height: 235px;
+  width: 350px;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .main-content {
+    display: block;
+    text-align: center;
+  }
+
+  .main-content h2 {
+    /* margin-left: 24rem; */
+    /* padding: 2rem; */
+    max-width: 22rem;
+    margin: auto;
+    /* text-align: center; */
+  }
+
+  .main-content .left {
+    /* display: block; */
+    margin-left: 0rem;
+    text-align: center;
+  }
+
+  .btn-primary {
+    margin-top: 2rem;
+    /* margin-bottom: 2rem; */
+  }
+
+  .main-content .right {
+    margin-top: 2rem;
+    /* display: block; */
+  }
+
+  textarea {
+    margin-top: 2rem;
+  }
 }
