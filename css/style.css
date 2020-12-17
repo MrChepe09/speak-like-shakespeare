@@ -101,9 +101,11 @@ textarea {
   width: 350px;
   font-size: 2rem;
   padding: 1rem;
+  background-color: rgb(255, 255, 255, 0.8);
+  color: black;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
   .main-content {
     display: block;
     text-align: center;
@@ -134,6 +136,8 @@ textarea {
   }
 
   textarea {
+    width: 80%;
+    max-width: 550px;
     margin-top: 2rem;
   }
 }
